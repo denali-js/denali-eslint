@@ -9,12 +9,11 @@ export default class DenaliEslintBuilder extends Builder {
     if (this.project.lint) {
       // If it's in test environment, generate test modules for each linted file
       if (this.project.environment === 'test') {
-        let lintTestTree = new LintTree(tree, { generateTests: true, rootDir: this.dir });
+        let lintTestTree = new LintTree(tree, { generateTests: true, rootDir: dir });
         lintTestTree = new Funnel(lintTestTree, { destDir: 'test/lint' });
         return new MergeTree([ lintTestTree, tree ]);
       }
       // Otherwise, just lint and move on
-      console.log(dir);
       return new LintTree(tree, { rootDir: dir });
     }
     return tree;
