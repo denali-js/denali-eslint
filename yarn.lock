@@ -1682,15 +1682,16 @@ delegates@^1.0.0:
   version "1.0.0"
   resolved "https://registry.yarnpkg.com/delegates/-/delegates-1.0.0.tgz#84c6e159b81904fdca59a0ef44cd870d31250f9a"
 
-denali-babel@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/denali-babel/-/denali-babel-0.0.2.tgz#ad6970bc20d3ef52e77e4d731e70f97f9d9b52b7"
+denali-babel@0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/denali-babel/-/denali-babel-0.0.3.tgz#bc745ec0e1b4bfbcf01e3534a92276ce1509e9ad"
   dependencies:
     babel-plugin-transform-async-to-generator "^6.16.0"
     babel-plugin-transform-class-properties "^6.18.0"
     babel-preset-latest "^6.16.0"
     bluebird "^3.4.6"
     broccoli-babel-transpiler "^6.0.0-alpha.2"
+    denali "0.0.13"
     eslint-config-denali "^1.1.0"
     lodash "^4.16.4"
 
