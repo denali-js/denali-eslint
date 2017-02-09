@@ -1,12 +1,13 @@
-import { Builder } from 'denali';
-import Funnel from 'broccoli-funnel';
-import MergeTree from 'broccoli-merge-trees';
-import Concat from 'broccoli-concat';
-import LintTree from './lib/lint-tree';
+const Builder = require('denali/lib/cli/builder').default;
+const Funnel = require('broccoli-funnel');
+const Concat = require('broccoli-concat');
+const MergeTree = require('broccoli-merge-trees');
 
-export default class DenaliEslintBuilder extends Builder {
+module.exports = class DenaliEslintBuilder extends Builder {
 
   processParent(tree, dir) {
+    // Require here to avoid loading when we build this addon itself
+    const LintTree = require('./lib/lint-tree').default;
     if (this.project.lint) {
       // If it's in test environment, generate test modules for each linted file
       if (this.project.environment === 'test') {
