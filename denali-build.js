@@ -1,4 +1,4 @@
-const Builder = require('denali/lib/cli/builder').default;
+const { Builder } = require('denali-cli');
 const Funnel = require('broccoli-funnel');
 const Concat = require('broccoli-concat');
 const MergeTree = require('broccoli-merge-trees');
