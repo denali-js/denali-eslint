@@ -2,7 +2,9 @@
   "name": "denali-eslint",
   "version": "0.0.11",
   "scripts": {
-    "test": "denali test"
+    "build": "denali build",
+    "test": "denali test",
+    "prepublish": "in-publish && echo \"Use 'denali publish' instead.\" && exit 1 || not-in-publish"
   },
   "keywords": [
     "denali",
@@ -35,6 +37,7 @@
     "denali-cli": "0.0.x",
     "eslint": "^3.9.1",
     "eslint-config-denali": "^1.1.0",
+    "in-publish": "^2.0.0",
     "js-string-escape": "^1.0.1",
     "lodash": "^4.17.4"
   },
