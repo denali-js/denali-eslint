@@ -2,9 +2,8 @@ import ApplicationAction from './application';
 
 export default class IndexAction extends ApplicationAction {
 
-  serializer = false;
-
   respond() {
+    // console.log('this should error eslint');
     return { message: 'Welcome to Denali!' };
   }
 
