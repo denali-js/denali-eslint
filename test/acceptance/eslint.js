@@ -30,6 +30,6 @@ test('fails tests when eslint errors', async (t) => {
   fs.writeFileSync(actionPath, actionContents);
 
   let { output } = await server.run({});
-  t.true(output.includes('1 failed'));
+  t.true(output.includes('app/actions/index.js should pass ESLint'));
   t.true(output.includes('6:5 - Unexpected console statement. (no-console)'));
 });
