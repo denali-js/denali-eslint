@@ -19,7 +19,7 @@ test('prints eslint errors', async (t) => {
 });
 
 test('fails tests when eslint errors', async (t) => {
-  let server = new CommandAcceptanceTest('test');
+  let server = new CommandAcceptanceTest('test', { environment: 'test' });
 
   // Insert eslint violation - we can't bake this into the actual dummy app
   // source, because the dummy app is automatically compiled when running tests,
