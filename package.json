@@ -11,6 +11,10 @@
     "denali-addon",
     "addon"
   ],
+  "files": [
+    "dist",
+    "denali-build.js"
+  ],
   "main": "denali-build.js",
   "license": "MIT",
   "dependencies": {
