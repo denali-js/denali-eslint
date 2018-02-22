@@ -1,7 +1,7 @@
 import * as path from 'path';
 import * as fs from 'fs';
 import test from 'ava';
-import { CommandAcceptanceTest } from 'denali-cli';
+import { CommandAcceptanceTest } from '@denali-js/cli';
 
 test('prints eslint errors', async (t) => {
   let server = new CommandAcceptanceTest('build');

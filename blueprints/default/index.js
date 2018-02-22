@@ -1,4 +1,4 @@
-import { Blueprint } from 'denali-cli';
+import { Blueprint } from '@denali-js/cli';
 
 const packages = [
   'babel-eslint'
@@ -6,7 +6,7 @@ const packages = [
 
 export default class DenaliEslintBlueprint extends Blueprint {
 
-  static blueprintName = 'denali-eslint';
+  static blueprintName = 'default';
   static description = 'Generate the default .eslintrc and installs the babel-eslint parser';
 
   postInstall() {

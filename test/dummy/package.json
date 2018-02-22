@@ -2,8 +2,8 @@
   "name": "dummy",
   "version": "0.0.0",
   "dependencies": {
-    "denali": "*",
-    "denali-eslint": "*",
+    "@denali-js/core": "*",
+    "@denali-js/eslint": "*",
     "babel-eslint": "*"
   }
 }

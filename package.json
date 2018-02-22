@@ -1,6 +1,6 @@
 {
-  "name": "denali-eslint",
-  "version": "0.0.18",
+  "name": "@denali-js/eslint",
+  "version": "0.1.0",
   "scripts": {
     "build": "denali build",
     "test": "denali test",
@@ -17,25 +17,26 @@
   ],
   "main": "denali-build.js",
   "license": "MIT",
+  "repository": "denali-js/eslint",
   "dependencies": {
+    "@denali-js/cli": "0.1.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "broccoli-concat": "^3.2.2",
     "broccoli-filter": "^1.2.4",
     "chalk": "^2.3.0",
     "dedent-js": "^1.0.1",
-    "denali-cli": "0.0.24",
     "eslint": "^4.16.0",
     "js-string-escape": "^1.0.1"
   },
   "devDependencies": {
+    "@denali-js/core": "0.1.0",
+    "@denali-js/babel": "0.1.0",
     "ava": "^0.25.0",
     "babel-eslint": "^8.2.1",
-    "babel-preset-env": "^1.6.1",
-    "denali": "0.0.44",
-    "denali-babel": "0.0.17"
+    "babel-preset-env": "^1.6.1"
   },
   "denali": {
-    "before": "denali-babel"
+    "before": "@denali-js/babel"
   },
   "ava": {
     "plugins": [],
