@@ -16,7 +16,7 @@
     "denali-build.js"
   ],
   "main": "denali-build.js",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": "denali-js/eslint",
   "dependencies": {
     "@denali-js/cli": "0.1.0",
