@@ -2,6 +2,11 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+<a name="0.1.1"></a>
+## [0.1.1](https://github.com/denali-js/eslint/compare/v0.0.18...v0.1.1) (2018-02-22)
+
+
+
 <a name="0.0.18"></a>
 ## [0.0.18](https://github.com/denali-js/denali-eslint/compare/v0.0.17...v0.0.18) (2018-02-11)
 
