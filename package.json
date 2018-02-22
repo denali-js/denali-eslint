@@ -19,7 +19,7 @@
   "license": "Apache-2.0",
   "repository": "denali-js/eslint",
   "dependencies": {
-    "@denali-js/cli": "0.1.0",
+    "@denali-js/cli": "0.1.1",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "broccoli-concat": "^3.2.2",
     "broccoli-filter": "^1.2.4",
@@ -29,8 +29,8 @@
     "js-string-escape": "^1.0.1"
   },
   "devDependencies": {
-    "@denali-js/core": "0.1.0",
-    "@denali-js/babel": "0.1.0",
+    "@denali-js/core": "0.1.1",
+    "@denali-js/babel": "0.1.1",
     "ava": "^0.25.0",
     "babel-eslint": "^8.2.1",
     "babel-preset-env": "^1.6.1"
